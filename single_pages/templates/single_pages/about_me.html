@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <title>About me</title>
+    <link rel="stylesheet" href="{% static 'blog/bootstrap/bootstrap.min.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'single_pages/css/about_me.css' %}" media="screen">
+    <script src="https://kit.fontawesome.com/726bbd6862.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d514c87622.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    {% include 'blog/navbar.html' %}
+
+    <div class="container">
+        <!-- mt(위에만 마진) mb(아래에 마진) my(위아래 마진)-->
+        <div class="row my-3">
+            <div class="col-9">
+        <h1 class="text-light">About</h1>
+        <h2 class="text-light">김 입니다.</h2>
+        <p class="text-black">꾸준히 노력하고 매일 실력을 발전시켜 성장하는 모습을 꿈꾸는 S/W개발자.</p>
+        <p class="text-black">자전거타기, 게임하기, 음악감상을 좋아합니다.</p>
+        </div>
+        <div class="col-3">
+        <img src= "{% static 'single_pages/images/kim1.jpg' %}" class=img-fluid w-50> 
+        <!-- 3칸 짜리 열에 해당하는 부분에 꽉차게 그림 높이가 조정됨 -->
+    </div>
+
+    <div class="profile-list">
+        <div class="profile-text">
+            <h3 class="text-light"><i class="fa-solid fa-address-card text-light"></i> Profile</h3>
+            <p class="text-light">
+                <i class="fa-solid fa-building-columns text-light"> 홍익대학교 게임소프트웨어학과</i><br>
+                <i class="fa-solid fa-envelope text-light"> e.mail: xxxxxx@gmail.com</i><br>
+                <i class="fa-solid fa-phone-volume text-light"> Tell: 010-xxxx-xxxx</i><br>
+                <i class="fa-sharp fa-solid fa-blog text-light"> 블로그: xxxxxx@naver.com/xxxx/xx</i><br>
+                <i class="fa-sharp fa-solid fa-share"> xx그린컴퓨터아카데미 | Python IT소프트웨어과정 개발공부 | 2022.06.22 ~ 2022.10.05</i><br>
+            </p>
+
+            <h4 class="text-light"><i class="fa-solid fa-building"></i> 경력사항</h4>
+            <p class="text-light">
+                <i class="fa-solid fa-buildings"> xx식품 | 사무행정/경리 | 2019.02. ~ 2021.12.</i><br>
+                <i class="fa-solid fa-buildings"> xxx가  | 사장/관리     | 2017.10. ~ 2019.01.</i><br>
+                <i class="fa-solid fa-buildings"> xx식품 | 배달/관리     | 2017.01. ~ 2017.10.</i><br>
+            </p>
+
+            <h4 class="text-light">Skills</h4>
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="80%" style="max-width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="70%" style="max-width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill-name">C언어</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="60%" style="max-width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="col-12">
+        <h2 class="text-light">Portfolio</h2>
+    </div>
+        <div class="col-sm col-lg-6">
+            <img src= "{% static 'single_pages/images/computer.jpg' %}" class=img-fluid> 
+        </div>
+        <div class="col-sm col-lg-3">
+            <img src= "{% static 'single_pages/images/hero.jpg' %}" class=img-fluid> 
+        </div>
+        <div class="col-sm col-lg-3">
+            <img src= "{% static 'single_pages/images/com.jpg' %}" class=img-fluid> 
+        </div>
+    </div>
+    </div>
+    </div>
+
+    {% include 'blog/footer.html' %}
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
